@@ -1,0 +1,5 @@
+*.log
+*.pyc
+scraped-data/*.json
+scraped-data/*.jl
+.idea
