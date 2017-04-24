@@ -1,6 +1,6 @@
-# web-crawler
-install requirements 
-Python VirtualEnv
+# web-crawler in Python and search engine in Java
+
+#### Python VirtualEnv Python 3.4
 Run following command in terminal:
 ```
 pip install virtualenv virtualenvwrapper
@@ -15,11 +15,19 @@ You can check the python version by this command:
 python --version 
 ```
 
+#### install requirements 
 ```
 $ cd stack
 $ pip install -r requirements.txt
 ```
 
+#### run crawler
+Run the following command within the “stack” directory:
 ```
 $ scrapy crawl stack_crawler
 ```
+
+#### check scraped data
+cd to `stack/scraped-data/` directory to see the scraped data with `.json` extension
+
+
