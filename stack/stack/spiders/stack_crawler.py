@@ -30,7 +30,7 @@ class StackCrawlerSpider(CrawlSpider):
             s = summary.xpath(
                 'div[@class="excerpt"]/text()').extract()[0]
             # replace all punctuations from the plain text with space, and devide them by space
-            item['excerpt'] = re.sub('[^A-Za-z0-9]+', ' ', s).strip()
+            item['excerpt'] = re.sub('[^A-Za-z0-9,.]+', ' ', s).strip()
 
             yield item
 

@@ -29,8 +29,7 @@ public class FileToMongoDB {
 	private static DB db = null;
     private static DBCollection collection = null;
     
-	public static void cleanup()
-    {
+	public static void cleanup() {
         // refresh the collection each time...
 		try {
 			mongo =  new Mongo("localhost", 27017);
@@ -55,7 +54,7 @@ public class FileToMongoDB {
 			// convert JSON to DBObject directly
 			for (Object o : list) {
 				DBObject dbObject = (DBObject) JSON
-						.parse(o.toString());
+						.parse(o.toString().toLowerCase());
 				collection.insert(dbObject);
 			}
 			
