@@ -20,7 +20,10 @@ python --version
 $ cd stack
 $ pip install -r requirements.txt
 ```
-
+#### Generate a requirements file.
+```
+$ pip freeze > requirements.txt
+```
 #### run crawler
 Run the following command within the “stack” directory:
 ```
